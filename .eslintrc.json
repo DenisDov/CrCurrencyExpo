@@ -1,0 +1,20 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 1,
+    "react/prefer-stateless-function": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-no-bind": 0,
+    "global-require": 0
+  }
+}
