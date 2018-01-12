@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { View, ScrollView, FlatList, RefreshControl } from 'react-native';
-import Spinner from 'react-native-loading-spinner-overlay';
+import { View, ScrollView, FlatList, RefreshControl, ActivityIndicator } from 'react-native';
 
 import { Container } from '../components/Container';
 import { CoinCard } from '../components/CoinCard';
@@ -41,8 +40,13 @@ class Home extends Component {
     const { CryptoReducer } = this.props;
     if (CryptoReducer.isFetching) {
       return (
-        <View>
-          <Spinner visible={CryptoReducer.isFetching} animation="fade" />
+        <View
+          style={{
+            flex: 1,
+            justifyContent: 'center',
+          }}
+        >
+          <ActivityIndicator size="large" />
         </View>
       );
     }

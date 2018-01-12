@@ -6,7 +6,7 @@ import Navigator from './config/routes';
 import Store from './config/Store';
 
 EStyleSheet.build({
-  $white: '#ffffff',
+  $main: '#f79319',
 });
 
 export default () => (
