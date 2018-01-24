@@ -20,4 +20,5 @@ export default {
   ETC: require('./images/etc.png'),
   LSK: require('./images/lsk.png'),
   ICX: require('./images/icx.png'),
+  VEN: require('./images/ven.png'),
 };

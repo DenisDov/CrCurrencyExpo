@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { View, ScrollView, FlatList, RefreshControl, ActivityIndicator } from 'react-native';
+import { Text, View, ScrollView, FlatList, RefreshControl, ActivityIndicator } from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 
 import { Container } from '../components/Container';
 import { CoinCard } from '../components/CoinCard';
 
 import FetchCoinData from './../actions/FetchCoinData';
+
+const styles = EStyleSheet.create({
+  version: {
+    fontSize: 10,
+    padding: 10,
+    textAlign: 'right',
+  },
+});
 
 class Home extends Component {
   componentWillMount() {
@@ -59,6 +68,7 @@ class Home extends Component {
           }
         >
           {this.renderCoinCards()}
+          <Text style={styles.version}>Version 1.0</Text>
         </ScrollView>
       </Container>
     );
