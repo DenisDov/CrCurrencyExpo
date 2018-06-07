@@ -8,6 +8,10 @@
     "version": "1.0",
     "androidStatusBar": {
       "backgroundColor": "#f79319"
+    },
+    "android": {
+      "package": "com.crcurrency",
+      "versionCode": 1
     }
   }
 }
