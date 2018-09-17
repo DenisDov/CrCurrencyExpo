@@ -27,7 +27,7 @@
     "debug": "open 'rndebugger://set-debugger-loc?host=localhost&port=19001'",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prettier": "prettier --write '*.js'",
+    "prettier": "prettier --write \"*.js\"",
     "format-code": "yarn run prettier && yarn run lint:fix",
     "precommit": "lint-staged"
   },
